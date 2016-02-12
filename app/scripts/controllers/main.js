@@ -58,6 +58,7 @@ angular.module('alakazamApp')
                 }
             }
             $scope.quiz = quiz;
+            $scope.loadAudio();
         }
 
         $scope.loadAudio = function() {
@@ -91,7 +92,6 @@ angular.module('alakazamApp')
         };
         $scope.loaded = function() {
             $scope.imgLoad = true;
-            $scope.loadAudio();
         };
         $scope.next = function() {
             $scope.pauseAudio();
@@ -99,6 +99,7 @@ angular.module('alakazamApp')
             $scope.current++;
             if (QUIZ_SIZE !== $scope.current) {
                 cfpLoadingBar.start();
+                $scope.loadAudio();
             } else {
                 UserService.saveScore(UserService.getScore());
                 $location.url('score');
