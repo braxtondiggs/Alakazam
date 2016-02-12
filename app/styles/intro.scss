@@ -40,6 +40,9 @@ $highlight1: #B83B5E;
 .grid {
     display: block;
     clear: both;
+    max-width: 820px;
+    min-width: 320px;
+    margin: auto;
 }
 
 .grid .unit {
