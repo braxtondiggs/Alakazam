@@ -73,6 +73,7 @@ angular.module('alakazamApp', [
         cfpLoadingBarProvider.includeSpinner = false;
     }])
     .directive('googleAdSense', function() {
+        /*global adsbygoogle*/
         return {
             restrict: 'A',
             replace: true,

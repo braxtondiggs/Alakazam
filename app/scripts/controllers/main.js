@@ -5,7 +5,7 @@ angular.module('alakazamApp')
         var audioPlayer = null;
         var audioPlayerEnded = true;
         $scope.current = 0;
-        $scope.imgLoad = 0;
+        $scope.imgLoad = false;
         RapperService.loadRapper().$loaded().then(function() {
             createQuiz();
         });
@@ -58,6 +58,7 @@ angular.module('alakazamApp')
                 }
             }
             $scope.quiz = quiz;
+            $scope.loadAudio();
         }
 
         $scope.loadAudio = function() {
@@ -65,10 +66,8 @@ angular.module('alakazamApp')
             audioPlayer.onended = function() {
                 audioPlayerEnded = true;
             };
-            audioPlayer.onloadeddata = function() {
-                $scope.playAudio();
-                cfpLoadingBar.complete();
-            };
+            $scope.playAudio();
+            cfpLoadingBar.complete();
         };
         $scope.playAudio = function() {
             if (audioPlayerEnded === true) {
@@ -92,14 +91,11 @@ angular.module('alakazamApp')
             }
         };
         $scope.loaded = function() {
-            $scope.imgLoad++;
-            if ($scope.imgLoad ===  5) {
-                $scope.loadAudio();
-            }
+            $scope.imgLoad = true;
         };
         $scope.next = function() {
             $scope.pauseAudio();
-            $scope.imgLoad = 0;
+            $scope.imgLoad = false;
             $scope.current++;
             if (QUIZ_SIZE !== $scope.current) {
                 cfpLoadingBar.start();
