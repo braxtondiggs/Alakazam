@@ -1,0 +1,9 @@
+{
+  "firebase": "popping-heat-8539",
+  "public": "public",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

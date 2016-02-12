@@ -1,0 +1,88 @@
+$highlight1: #B83B5E;
+.intro {
+    .intro-image {
+        margin: auto;
+        display: block;
+        margin-top: 30px;
+        height: 150px;
+    }
+    .button {
+        margin: auto;
+        display: block;
+        border-color: $highlight1!important;
+        color: $highlight1!important;
+        margin-top: 60px;
+        width: 60%;
+        &.activated {
+            background-color: rgba($highlight1, 0.8)!important;
+        }
+    }
+    .header {
+        font-size: 38px;
+    }
+    .description {
+        width: 50%;
+        margin: auto;
+        display: block;
+        color: #CCC;
+        min-width: 320px;
+        max-width: 500px;
+    }
+}
+
+.grid,
+.unit {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: block;
+    clear: both;
+}
+
+.grid .unit {
+    float: left;
+    width: 100%;
+}
+
+.grid .whole,
+.grid .w-1-1 {
+    width: 100%;
+}
+
+.grid .half,
+.grid .w-1-2 {
+    width: 50%;
+}
+
+.grid .one-third,
+.grid .w-1-3 {
+    width: 33.3332%;
+}
+
+.grid .two-thirds,
+.grid .w-2-3 {
+    width: 66.6665%;
+}
+
+.grid .one-quarter,
+.grid .w-1-4 {
+    width: 25%;
+}
+
+.grid {
+    *zoom: 1;
+}
+
+.grid:before,
+.grid:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.grid:after {
+    clear: both;
+}

@@ -1,0 +1,46 @@
+.social_container {
+    max-width: 480px;
+    margin: 15px auto 0;
+    img {
+        width: 100%;
+    }
+    .unit {
+        padding: 10px;
+    }
+}
+
+hr {
+    border-color: rgba(#393E46, 0.8);
+}
+
+h3 {
+    color: #CCC!important;
+}
+
+.bar-stable .button.button-clear {
+    color: #CCC;
+}
+
+.blank {
+    position: relative;
+    &:after {
+    	font-size: 42px;
+    	color: #343539;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        content: "\f201";
+        display: inline-block;
+        font-family: "Ionicons";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        text-rendering: auto;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
