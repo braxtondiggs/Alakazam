@@ -5,6 +5,7 @@ engines:
       languages:
       - javascript
       - scss
+      - html
   eslint:
     enabled: true
   fixme:
@@ -21,3 +22,8 @@ exclude_paths:
 - "Procfile"
 - "Gruntfile.js"
 - "app/assets/"
+- "app/images/"
+- "app/robots.txt"
+- "app/fonts/"
+- "test/"
+- "app/favicon.ico"
