@@ -1,4 +1,4 @@
-# Alakazam ![Alakazam](cryptonym.png)
+# Alakazam ![Alakazam](cryptonym.png)<a href="http://dcwebfest.org/winners/list"><img src="award.jpg" align="right" height="250" width="250"/></a>
 
 [![Code Climate](https://codeclimate.com/github/braxtondiggs/Alakazam/badges/gpa.svg)](https://codeclimate.com/github/braxtondiggs/Alakazam)
 
